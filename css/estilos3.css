@@ -1,0 +1,471 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #32cd32;
+}
+
+h1, h2, h3 {
+    color: #32cd32;
+}
+
+.navbar-dark {
+    background: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+.carousel-item img {
+    height: 75vh;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px; 
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+ul.list-unstyled {
+    text-align: left;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.my-icon {
+    margin-top: -19px;
+    color: #32cd32;
+}
+
+.list-unstyled {
+    margin-top: 19px;
+
+}
+
+#nosotros p {
+    text-align: justify; 
+    line-height: 1.6; 
+    font-size: 1.1rem; 
+    color: #f8f9fa; 
+}
+
+#nosotros h2 {
+    font-weight: 700; 
+    color: #32cd32;
+  
+}
+
+#nosotros img {
+    max-width: 80%; 
+    margin-top: 20px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Footer Custom Styles */
+.footer-custom {
+    background-color: #343a40; 
+    color: #f8f9fa; 
+}
+
+.footer-logo {
+    color: #32cd32; 
+}
+
+.footer-links-title, .footer-contact-title, .footer-newsletter-title {
+    color: #32cd32;
+}
+.footer-link {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: #32cd32; 
+}
+.footer-divider {
+    border-top: 1px solid #f8f9fa; 
+}
+.footer-newsletter-title {
+    color: #32cd32; 
+}
+.footer-input {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 0.25rem;
+}
+.footer-button {
+    background-color: #32cd32;
+    border-color: #32cd32;
+}
+.footer-button:hover {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.footer-line {
+    border-top: 1px solid #f8f9fa;
+}
+@media (min-width: 768px) {
+    #features .card i {
+        font-size: 3rem; 
+    }
+    /* Para los íconos en la sección Nuestros Servicios */
+    #servicios .card i {
+        font-size: 3rem; 
+    }
+    #nosotros p {
+        font-size: 1rem; 
+    }
+
+    #nosotros img {
+        max-width: 100%; 
+        margin-top: 15px; 
+    }
+
+    #nosotros h2 {
+        font-size: 1.8rem; 
+    }
+    .footer-custom .social-icons {
+        margin-bottom: 20px;
+    }
+
+    .footer-custom .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    .footer-custom .col-12 {
+        text-align: center;
+    }
+
+    .footer-custom .footer-input {
+        width: 80%;
+    }
+    
+}
+
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .divlogo2 {
+        margin-left: -65px;
+    }
+
+    #logotitle {
+        margin-left: -65px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .a-x {
+        font-size: small;
+        text-align: justify;
+        background-color: #1e1e2f;
+        color: #f5f5f5;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .logo2 {
+        width: 40px;
+        margin-left: -20px;
+    }
+
+    .move-right {
+        margin-left: 179px;
+    }
+
+    .col-md-4:nth-child(1) .btn {
+        margin-top: 40px;
+    }
+
+    /* Aumento de íconos */
+    .card i {
+        font-size: 2.5rem;
+    }
+
+    .navbar-nav i {
+        font-size: 1.5rem;  
+    }
+
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card i {
+        font-size: 3rem; 
+    }
+
+    .navbar-nav i {
+        font-size: 1.8rem; 
+    }
+
+    .carousel-item img {
+        height: 50vh; 
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .divlogo2 {
+        margin-left: -35px;
+    }
+
+    #logotitle {
+        margin-left: -65px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .a-x {
+        font-size: small;
+        text-align: justify;
+        background-color: #1e1e2f;
+        color: #f5f5f5;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .navbar-nav {
+        flex-direction: column; 
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0; 
+    }
+
+    .navbar-nav .nav-item i {
+        font-size: 30px; /
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; 
+    }
+    #nosotros p {
+        font-size: 1rem; 
+    }
+
+    #nosotros img {
+        max-width: 100%; 
+        margin-top: 15px; 
+    }
+
+    #nosotros h2 {
+        font-size: 1.8rem; 
+    }
+@media (max-width: 480px) {
+    #nosotros p {
+        font-size: 0.95rem;
+    }
+
+    #nosotros h2 {
+        font-size: 1.5rem;
+    }
+    .footer-custom .social-icons a {
+        font-size: 1.1rem;
+    }
+
+    .footer-custom .col-12 {
+        text-align: center;
+    }
+
+    .footer-custom .footer-links-title,
+    .footer-custom .footer-contact-title {
+        font-size: 1.2rem;
+    }
+
+    .footer-custom .footer-input {
+        width: 80%;
+    }
+    
+}
+}
+
+/* Íconos del navbar */
+.nav-link.active {
+    color: #32cd32 !important;
+    border-bottom: 3px solid rgba(0, 255, 0, 0.5);
+}
+
+.logo2 {
+    width: 40px;
+    margin-left: -20px;
+}
+
+.move-right {
+    margin-left: 179px;
+    margin-right: 0;
+}
+/* Estilo solo para el modal */
+.modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo dentro del modal */
+  .logo-container {
+    background: linear-gradient(145deg, #feffff, #ffffff);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  /* Pestañas dentro del modal */
+  .tab-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .tab-btn.active {
+    color: #ffffff;
+    border-bottom: 2px solid  #32cd32;
+  }
+
+  /* Formularios dentro del modal */
+  .form-pane {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .form-pane.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .futuristic-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: text-glitch 3s infinite;
+    color: #ffffff;
+  }
+
+  /* Inputs */
+  .futuristic-input {
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+
+  .futuristic-input:focus {
+    border-color: #00d1ff;
+    box-shadow: 0 0 8px rgba(0, 209, 255, 0.5);
+    outline: none;
+    
+  }
+
+  /* Botón dentro del modal */
+  .futuristic-btn {
+    background: linear-gradient(145deg, #00d1ff, #32cd32);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+  }
+
+  .futuristic-btn:hover {
+    background: linear-gradient(145deg, #00d1ff,  #32cd32);
+    box-shadow: 0 4px 10px  #00d1ff;
+    color: #0b151f;
+  }
+
+  /* Estilo para el botón de cerrar el modal */
+  .btn-close {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  #loginModalLabel{
+    color: #ffffff;
+  }
+ .card p{
+    margin-top: 10px; 
+    font-size: 0.95rem; 
+    line-height: 1.5; 
+    text-align: justify;
+  }
+#bb{
+    margin-top: 40px;
+}
+#logofo{
+    width: 50px;
+    margin-top: -20px;
+    
+
+}

@@ -1,0 +1,100 @@
+  /* Fuentes y colores globales */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.error-container {
+    text-align: center;
+    background-color: #1e1e1e; 
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.error-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Icono de error */
+.icon-illustration {
+    font-size: 4rem;
+    color: #32cd32; 
+    margin-bottom: 20px;
+    animation: rotate 6s linear infinite;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Código de error */
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #32cd32; /* Verde medio claro */
+}
+
+/* Mensaje de error */
+.error-message {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #32cd32; 
+    border: none;
+    color: #121212; 
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #28a428; 
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 60px;
+    }
+
+    .error-message {
+        font-size: 16px;
+    }
+
+    .icon-illustration {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .error-code {
+        font-size: 50px;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+
+    .icon-illustration {
+        font-size: 60px;
+    }
+}

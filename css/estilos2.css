@@ -1,0 +1,305 @@
+  /* Fuentes y colores globales */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    color: #e0e0e0; 
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Contenedor principal */
+.welcome-container {
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.8); 
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación de Entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Animaciones para Elementos */
+.animate-logo {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-title {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.animate-subtitle {
+    animation: slideInRight 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.animate-button {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes para Animaciones */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Logo */
+.welcome-logo {
+    max-width: 190px;
+    margin-bottom: 6px;
+}
+
+/* Título de bienvenida */
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #32cd32; 
+}
+
+/* Subtítulo */
+.welcome-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Botón descubre*/
+.btn-cta {
+    background-color: #32cd32; 
+    border: none;
+    color: #121212; 
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.btn-cta:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-cta:hover {
+    background-color: #28a428; 
+    transform: scale(1.05);
+    color: #ffffff; 
+}
+
+  /* Fuentes y colores globales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+            color: #e0e0e0; 
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        /* Contenedor principal */
+        .welcome-container {
+            text-align: center;
+            background-color: rgba(30, 30, 30, 0.8); /* Fondo semitransparente */
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8.5px);
+            -webkit-backdrop-filter: blur(8.5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            animation: fadeIn 1s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Animación de Entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Animaciones para Elementos */
+        .animate-logo {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .animate-title {
+            animation: slideInLeft 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.5s;
+        }
+
+        .animate-subtitle {
+            animation: slideInRight 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+
+        .animate-button {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: 1.5s;
+        }
+
+        /* Keyframes para Animaciones */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Logo */
+        .welcome-logo {
+            max-width: 190px;
+            margin-bottom: 6px;
+        }
+
+        /* Título de bienvenida */
+        .welcome-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #32cd32; 
+        }
+        /* Subtítulo */
+        .welcome-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Botón CTA */
+        .btn-cta {
+            background-color: #32cd32; 
+            border: none;
+            color: #121212; 
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.5s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .btn-cta:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .btn-cta:hover {
+            background-color: #28a428; 
+            transform: scale(1.05);
+            color: #ffffff; 
+        }
+
+
+
+         /* Responsividad */
+         @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 28px;
+            }
+
+            .welcome-subtitle {
+                font-size: 16px;
+            }
+
+            .btn-cta {
+                padding: 8px 16px;
+            }
+
+            .welcome-logo {
+                max-width: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .welcome-title {
+                font-size: 24px;
+            }
+
+            .welcome-subtitle {
+                font-size: 14px;
+            }
+
+            .btn-cta {
+                padding: 6px 14px;
+            }
+
+            .welcome-logo {
+                max-width: 200px;
+            }
+        }
