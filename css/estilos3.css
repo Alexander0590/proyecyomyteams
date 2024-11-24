@@ -317,7 +317,9 @@ ul.list-unstyled li {
     .footer-custom .footer-input {
         width: 80%;
     }
-    
+  .divlogo2{
+    margin-left: -73px;
+  }
 }
 }
 
